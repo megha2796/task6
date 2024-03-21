@@ -5,33 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstraptask6</title>
     <style>
+      .text-center{
+        align-items: center;
+      }
+      .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
+
+      }
         .form{
-            padding: 150px;
+            padding: 20px;
             text-align: center;
-            justify-content: center;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-left: 150px;
-            margin-right: 150px;
+
+            
+            
             font-size: medium;
-            border:1px solid;
+            border: 1px solid;
             border-color:black;
+            max-width: 500px;
+            width: 90%;
             
         }
+        .form-group {
+            text-align: center;
+        }
+        .form-group:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+        
+      
         .center{
             display: flex;
             justify-content: center;
 
 
         }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .card {
+            background-color: aquamarine;
+            width: 15rem;
+        }
+        
+        .card-body {
+            text-align: center;
+        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
 </head>
 <body>
+  
+            
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 1000; width: 100%;">
         <a class="navbar-brand" href="#">
             <img src="buildlogo_1.png" alt="logo" width="120px">
         </a>
@@ -77,132 +120,134 @@
       <div class="container">
         <div class="text-center">
       
-      <a class="btn btn-primary" href="https://t.me/pygrammers_official" role="button">Telegram</a>
+      <a class="btn btn-primary"  href="https://t.me/pygrammers_official" role="button">Telegram</a>
         </div>
       </div>
-      <div class="form">
-        <h3 style="font-size: large; font-family: 'Times New Roman', Times, serif;">Form:</h3>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Mobile Number</label>
-            <input type="number" class="form-control" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Company/instituion name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">upload a short video or image of hand written sheet showing your interest</label>
-            <input type="file" class="form-control" id="exampleInputEmail1">
-          </div>
-          <input type="option" class="form-control" placeholder="Have you attended any events by pygrammers before?"> <br>
-          <button type="submit" class="btn btn-primary">Submit Form</button>
-         
+      
+
+  
+  <div class="body">
+  <div class="form">
+    <h3>FORM:</h3>
     
-        </form>
+
+  
+    <form>
+      
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1">
       </div>
-      <h2 style="text-align: center;">Mentors</h2><br>
-<div class="container">
-<div class="row">
-<div class="card" style="width: 18rem;">
-   <img src="card.jpg" class="card-img-top" alt="card">
-   <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="form-group">
+        <label for="number">Mobile Number</label>
+        <input type="number" class="form-control" id="number">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Company/instituion name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">upload a short video or image of hand written sheet showing your interest</label>
+        <input type="file" class="form-control" id="exampleInputEmail1">
+      </div>
+      <input type="option" class="form-control" placeholder="Have you attended any events by pygrammers before?"> <br>
+      <button type="submit" class="btn btn-primary">Submit Form</button>
      
-   </div>
 
- </div>
- <div class="card" style="width: 18rem;">
-   <img src="card.jpg" class="card-img-top" alt="...">
-   <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   </div>
- </div>
- <div class="card" style="width: 18rem;">
-   <img src="card.jpg" class="card-img-top" alt="...">
-   <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-     
-   </div>
- </div>
+    </form>
+  </div>
+  </div>
+  <h2 style="text-align: center;">Mentors</h2><br>
+    <div class="content">
+        
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
 
-</div><br>
-<div class="row">
-   <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="card">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
+        </div>
 
-     </div>
-     <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="...">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
-     </div>
-     <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="...">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
-     </div>
-</div><br>
-<div class="row">
-   <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="card">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
-
-     </div>
-
-     <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="card">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
-
-     </div>
-     <div class="card" style="width: 18rem;">
-       <img src="card.jpg" class="card-img-top" alt="card">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         
-       </div>
-
-     </div>
-</div>
-</div>
+    </div>
+      
+          
+      
 <div class="center">
 <img src="footer_1.png" style="height:50px; width: min-content;">
 </div>
+  
     
 
      
-
      
 
 
